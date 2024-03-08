@@ -2,6 +2,9 @@
     --cor-primaria: #FFFFFF;
     --cor-secundaria: #C0C0C0;
     --cor-botao: #167BF7;
+    --cor-botao-hover: #3C92FA;
+    --cor-link-hover: #167BF7;
+    --cor-link-active: #F40293;
     --cor-de-fundo: #00030C;
     --fonte-primaria: 'Inter';
 }
@@ -26,7 +29,7 @@ body {
     grid-template-columns: 50% 50%;
 }
 
-.apresentacao__links {
+.apresentacao__botao {
     text-decoration: none;
     color: var(--cor-primaria);
     background-color: var(--cor-botao);
@@ -35,6 +38,11 @@ body {
     display: block;
     font-size: 16px;
     margin-bottom: 1em;
+}
+
+.apresentacao__botao:hover{
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-botao-hover);
 }
 
 /* Combo */
@@ -57,7 +65,7 @@ body {
 .apresentacao__combo__imagem {
     margin: 1em 0 2em 0;
 }
-.apresentacao__combo__segundo__link {
+.apresentacao__combo__segundo__botao {
     background-color: transparent;
     border: 2px solid var(--cor-primaria);
 }
@@ -108,7 +116,7 @@ body {
     font-weight: 400;
     margin-bottom: 1em;
 }
-.apresentacao__telas__link {
+.apresentacao__telas__botao {
     display: inline-block;
 }
 .apresentacao__telas__imagem {
@@ -141,6 +149,61 @@ body {
 }
 
 /* Dispositivos */
+.apresentacao__dispositivos {
+    text-align: center;
+}
+.apresentacao__dispositivos__titulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 48px;
+    font-weight: 700;
+}
 .apresentacao__dispositivos__lista {
+    list-style-type: none;
     display: flex;
+    justify-content: center;
+    margin: 5em 0;
+}
+.apresentacao__dispositivos__lista__item{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Rodape */
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__imagem {
+    color: var(--cor-primaria);
+}
+.rodape__lista {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+.rodape__lista__link a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1em;
+}
+.rodape__lista__link a:hover {
+    color: var(--cor-link-hover);
+}
+.rodape__lista__link a:active {
+    color: var(--cor-link-active);
+}
+.rodape__texto{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1em 0;
 }
